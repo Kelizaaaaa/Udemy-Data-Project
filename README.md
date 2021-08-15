@@ -7,7 +7,7 @@ Udemy_Raw.csv --> Contains raw data extracted from Udemy <br>
 Udemy_Clean.csv --> Cleaned version of raw data
 
 ### Codes
-Data Collection - Udemy Scrape.py --> Used for web scrapping of Udemy
+Data Collection - Udemy Scrape.py --> Used for web scrapping of Udemy <br>
 Data Cleaning.ipynb --> Clean raw data obtained
 
 
