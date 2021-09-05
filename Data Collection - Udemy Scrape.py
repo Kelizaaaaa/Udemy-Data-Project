@@ -240,7 +240,7 @@ print("done")
 df_all.drop_duplicates(subset=["ID"], inplace=True)
 
 # Export data to raw csv file 
-df_all.to_csv("Udemy_Raw.csv")
+df_all.to_csv("./Data/Udemy_Raw.csv")
 
 
 
