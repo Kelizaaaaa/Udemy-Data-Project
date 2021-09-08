@@ -15,6 +15,7 @@ Data was scrapped using a combination of Selenium and BeautifulSoup to obtain in
 The data was relatively clean because there was control and customization during the web scrapping. In general, cleaning of data was quite minimal. 
 
 ## Data Details
+This dataset consists of 16,429 observations (rows) and 20 variables (columns). <br> 
 The data file (Udemy_Clean.csv) consists of the following columns: <br>
 1. Title: Title of Udemy course
 2. Overall_Rating: Overall average rating given by users who have taken the course
@@ -35,4 +36,23 @@ The data file (Udemy_Clean.csv) consists of the following columns: <br>
 16. Bestseller: Whether or not course is a bestseller
 17. Price: Original price of course
 18. Discounted_Price: Price of course after discount
+
+
+## Project 1: Price Mechanism 
+### Exploratory Data Analysis 
+An analysis of the Udemy data was conducted to investigate the relationship between various features and the target variable, "Price". Upon investigating, there were a few interesting observations which are as follows: 
+- The number of practice tests has the lowest correlation of -0.08 with price. 
+    - It is expected that more practice tests would translate to more course material that is provided, and hence a higher price. 
+    - Furthermore, it is a negative relationship. It is shocking because it is logical that if more course materials are provided, the price would be higher. However, this is the opposite where more course materials translate to a lower price. This relationship could possibly be due to a confounder. 
+- An interesting finding was that some of the free courses provided were relatively highly rated (3.7 and above). 
+    - Based on the samples taken, the course content quality is good despite the fact that the course is free. 
+- Safety & First Aid was the subcategory with the lowest average price. 
+    - Safety and first aid are vital life-saving skills hence I would have expected that they would be quite popular and priced highly. 
+    - One plausible explanation is that the nature of such causes would require in-person classes due to practical components such as CPR, hence it may not be as desirable online. 
+    - Another possible reason would be that as a form of encouragement for users to pick up such important skills, Udemy would offer these courses for free. 
+- Discounted courses had a lower average price compared to courses that are not discounted. 
+    - Discounts could be given for more pricey courses in order to make them more affordable and encourage users to pick up these courses. 
+    - But the other approach would be to create a price discrimination where customers are charged a premium for a quality course. Thus, this creates a wider variety for users where they can choose between the various classes of courses. 
+
+### Model Development
 
