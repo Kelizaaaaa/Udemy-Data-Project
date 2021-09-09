@@ -43,7 +43,7 @@ The data file (Udemy_Clean.csv) consists of the following columns: <br>
 An analysis of the Udemy data was conducted to investigate the relationship between various features and the target variable, "Price". Upon investigating, there were a few interesting observations which are as follows: 
 - The number of practice tests has the lowest correlation of -0.08 with price. 
     - It is expected that more practice tests would translate to more course material that is provided, and hence a higher price. 
-    - Furthermore, it is a negative relationship. It is shocking because it is logical that if more course materials are provided, the price would be higher. However, this is the opposite where more course materials translate to a lower price. This relationship could possibly be due to a confounder. 
+    - Furthermore, it is a negative relationship. This is shocking because it is logical that if more course materials are provided, the price would be higher. However, this is the opposite where more course materials translate to a lower price. This relationship could possibly be due to a confounder. 
 - An interesting finding was that some of the free courses provided were relatively highly rated (3.7 and above). 
     - Based on the samples taken, the course content quality is good despite the fact that the course is free. 
 - Safety & First Aid was the subcategory with the lowest average price. 
@@ -54,5 +54,13 @@ An analysis of the Udemy data was conducted to investigate the relationship betw
     - Discounts could be given for more pricey courses in order to make them more affordable and encourage users to pick up these courses. 
     - But the other approach would be to create a price discrimination where customers are charged a premium for a quality course. Thus, this creates a wider variety for users where they can choose between the various classes of courses. 
 
-### Model Development
+### Model 
+Objective: To build a model to determine the price mechanism of Udemy courses <br>
+Models: Multiple Linear Regression, Random Forest Regression, Gradient Boosting Models (XGBoost, LightGM)
+Evaluation metrics: Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE)
+- RSME and MAE are commonly used metrics to evaluate models especially on platforms like Kaggle. 
+- However, both metrics have limitations. 
+    - RSME penalizes larger errors more than smaller errors which will inflate the mean error score. 
+    - MAE doesn't differentiate between the types of errors and assumes a linear relationship with errors. 
+- Hence, we can combine both and use them to evaluate the models, to provide second opinions. 
 
