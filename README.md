@@ -62,5 +62,5 @@ Evaluation metrics: Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE)
 - However, both metrics have limitations. 
     - RSME penalizes larger errors more than smaller errors which will inflate the mean error score. 
     - MAE doesn't differentiate between the types of errors and assumes a linear relationship with errors. 
-- Hence, we can combine both and use them to evaluate the models, to provide second opinions. 
+- Hence, we can combine both where MAE will be used for adjustments within models for optimization and RSME will be used to evaluate the different models. 
 
