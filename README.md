@@ -37,9 +37,7 @@ The data file (Udemy_Clean.csv) consists of the following columns: <br>
 17. Price: Original price of course
 18. Discounted_Price: Price of course after discount
 
-
-## Project 1: Price Mechanism 
-### Exploratory Data Analysis 
+## Exploratory Data Analysis 
 An analysis of the Udemy data was conducted to investigate the relationship between various features and the target variable, "Price". Upon investigating, there were a few interesting observations which are as follows: 
 - The number of practice tests has the lowest correlation of -0.08 with price. 
     - It is expected that more practice tests would translate to more course material that is provided, and hence a higher price. 
@@ -52,8 +50,10 @@ An analysis of the Udemy data was conducted to investigate the relationship betw
     - Another possible reason would be that as a form of encouragement for users to pick up such important skills, Udemy would offer these courses for free. 
 - Discounted courses had a lower average price compared to courses that are not discounted. 
     - Discounts could be given for more pricey courses in order to make them more affordable and encourage users to pick up these courses. 
-    - But the other approach would be to create a price discrimination where customers are charged a premium for a quality course. Thus, this creates a wider variety for users where they can choose between the various classes of courses. 
+    - But the other approach would be to create a price discrimination where customers are charged a premium for a quality course. Thus, this creates a wider variety for users where they can choose between the various classes of courses.
 
+
+## Project 1: Price Mechanism 
 ### Model 
 Objective: To build a model to determine the price mechanism of Udemy courses <br>
 Models: Multiple Linear Regression, Random Forest Regression, Gradient Boosting Models (XGBoost, LightGM)
