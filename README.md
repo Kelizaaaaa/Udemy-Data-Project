@@ -56,11 +56,57 @@ An analysis of the Udemy data was conducted to investigate the relationship betw
 ## Project 1: Price Mechanism 
 ### Model 
 Objective: To build a model to determine the price mechanism of Udemy courses <br>
-Models: Multiple Linear Regression, Random Forest Regression, Gradient Boosting Models (XGBoost, LightGM)
-Evaluation metrics: Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE)
+Models: Multiple Linear Regression, Random Forest Regression, Gradient Boosting Models (XGBoost, LightGM) <br> 
+Evaluation metrics: Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE) <br> 
 - RSME and MAE are commonly used metrics to evaluate models especially on platforms like Kaggle. 
 - However, both metrics have limitations. 
     - RSME penalizes larger errors more than smaller errors which will inflate the mean error score. 
     - MAE doesn't differentiate between the types of errors and assumes a linear relationship with errors. 
 - Hence, we can combine both where MAE will be used for adjustments within models for optimization and RSME will be used to evaluate the different models. 
+
+### Evaluation 
+The root mean squared error (RMSE) of log(observed price) and log(actual price) is used to ensure that the errors for the more costly and less costly courses will affect the results to the same extent. 
+Model Scores (RMSE)
+- Multiple Linear Regression: 0.633
+- Random Forest Regression: 0.574
+- XGB Regression: 0.571
+- LightGBM Regression: 0.561
+
+Best performing model: Light Gradient Boosting Machine Model 
+
+Note: However, RMSE is still relatively high and unsatisfactory. This could be due to limitations of the assumptions made for the project which we will discuss in a later section. 
+
+## Project 2: Discount Classification
+### Model 
+Objective: To build a model to classify whether a course will be given a discount <br> 
+Models: Decision Tree Classifier, Random Forest Classifier, Logistic Regression, Naive Bayes Classification, Support Vector Classifier <br> 
+Evaluation metrics: Classification Accuracy, ROC Area Under Curve <br>
+- ROC helps us understand the ability of the model to classify accurately based on probabilities 
+    - Hence, we will use ROC area under curve to tune the various models and improve it
+- Accuracy score shows us the number of predictions that have been accurately classified when compared with the actual value. 
+    - This metric will be used for comparison between the models to compare the actual performance. 
+
+### Evalution
+Model Scores (Classification Accuracy)
+- Decision Tree, Score: 90.99%
+- Random Forest, Score: 85.19%
+- Logistic Regression, Score: 92.35%
+- Naive Bayes, Score: 23.21%
+- Support Vector, Score: 92.96%
+
+Best performing model: Support Vector Classifier 
+
+## Project Limitations
+One limitation of this project is related to the biggest assumption made, which is that is it assumed that Udemy's price mechanism follows a rational relationship where various related factors, such as rating of the course etc. However, this assumption fails to take into account the fact that Udemy uses discounts as a marketing scheme (Urgency marketing). They often aritificially change prices based on your browser cookie. More can be read on this website: https://skillscouter.com/how-often-does-udemy-have-sales/. <br> 
+Therefore this shows that it is hard to estimate the actual pricing of courses because the actual price of Udemy courses can in reality be defined as the discounted price since it is a gimmick to entice consumers to buy the courses by having a decoy option. 
+
+
+
+
+
+
+
+
+
+
 
