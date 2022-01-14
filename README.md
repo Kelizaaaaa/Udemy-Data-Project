@@ -99,6 +99,7 @@ Best performing model: Support Vector Classifier
 ## Project Limitations
 One limitation of this project is related to the biggest assumption made, which is that is it assumed that Udemy's price mechanism follows a rational relationship where various related factors, such as rating of the course etc. However, this assumption fails to take into account the fact that Udemy uses discounts as a marketing scheme (Urgency marketing). They often aritificially change prices based on your browser cookie. More can be read on this website: https://skillscouter.com/how-often-does-udemy-have-sales/. <br> 
 Therefore this shows that it is hard to estimate the actual pricing of courses because the actual price of Udemy courses can in reality be defined as the discounted price since it is a gimmick to entice consumers to buy the courses by having a decoy option. But that may be hard to capture since the discounts are constantly changing based on your cookies. 
+We can also observe that the results for the classification project are unexpectedly high which may be an indicator of overfitting. This could be due to a lack of data available to ensure that the model is not overtrained. 
 
 
 
